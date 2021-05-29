@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900');
+/* 
+svg {
+  background: #ebe7e0;
+} */
+
+@media only screen and (max-width: 1024px) {
+  text {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+    text {
+       font-size: 80px;
+    }
+  }
+
+text {
+  fill: #35322a;
+  filter: url('#money');
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-weight: 900;
+}
+/* 
+html {
+  align-items: center;
+  background: #ebe7e0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 600px;
+} */
+
+.center {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+  }

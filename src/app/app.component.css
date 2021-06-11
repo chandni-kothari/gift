@@ -1,0 +1,104 @@
+text {
+  fill: #f55a5a;
+  filter: url('#money');
+  font-weight: 900;
+  font-size: 33px;
+  font-family: 'Dekko';
+}
+
+.box {
+  background-color: #fffe8e;
+  width: 160px;
+  height: 130px;
+  top: 95px;
+  left: 50px;
+  position: absolute;
+  border-radius: 80px;
+}
+
+.eye1 {
+  position: absolute;
+  top: 35px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: #000;
+}
+
+.pupil1 {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  background: #fff;
+}
+
+.eye2 {
+  position: absolute;
+  top: 35px;
+  left: 95px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: #000;
+}
+
+.pupil2 {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  background: #fff;
+}
+
+.pupil2 {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  background: #fff;
+}
+
+.nose {
+  position: absolute;
+  top: 90px;
+  left: 65px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid black;
+}
+
+.ear1 {
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: black;
+}
+
+.ear2 {
+  position: absolute;
+  top: 0px;
+  left: 135px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: black;
+}
+
+#section1 {
+  border: 5px solid #111;
+  border-radius: 15px;
+  margin: 0px;
+}

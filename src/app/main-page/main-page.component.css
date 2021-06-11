@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900');
+@import url('http://fonts.cdnfonts.com/css/montereyflf');
 
 text {
   fill: #f55a5a;
   filter: url('#money');
   font-weight: 900;
   font-size: 33px;
-  font-family: -webkit-pictograph;
+  font-family: 'MontereyFLF';
 }
 
 .box{

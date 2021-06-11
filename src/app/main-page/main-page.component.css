@@ -5,14 +5,14 @@ svg {
 } */
 
 text {
-  fill: #00838f;
+  fill: #f55a5a;
   filter: url('#money');
   font-weight: 900;
   font-size: 33px;
 }
 
 .box{
-  background-color:white;
+  background-color:#fffe8e;
   width:160px;
   height:130px;
   top:90px;
@@ -92,5 +92,11 @@ text {
   height: 50px;
   border-radius: 25px;
   background: black;
+}
+
+#section1 {
+  border: 5px solid #111;
+  border-radius: 15px;
+  margin: 0px;
 }
 

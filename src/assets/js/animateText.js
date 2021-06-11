@@ -5,15 +5,15 @@ var animateText = {
   
   colors : {
     color1: "rgba(255,255,255,1)",
-    color2: "rgba(142,217,222,1)",
-    color3: "rgba(232,248,255,1)",
+    color2: "rgba(255,255,0,0.3)",
+    color3: "rgba(255,0,0,0.3)",
     color4: "rgba(135,143,145,1)"
   },
   
   options : {
     alphaSpeed: 10,
     alphaVariance: 1,
-    color: ["rgba(255,255,255,1)", "rgba(142,217,222,1)", "rgba(232,248,255,1)", "rgba(135,143,145,1)"],
+    color: ["rgba(255,255,255,1)", "rgba(255,255,0,0.3)", "rgba(255,0,0,0.3)", "rgba(135,143,145,1)"],
     composition: "source-over",
     count: 350,
     direction: 161,

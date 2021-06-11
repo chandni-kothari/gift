@@ -30,7 +30,9 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/js/animateText.js"
+              "src/assets/js/animateText.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/js/scrollbox.js"
             ]
           },
           "configurations": {
@@ -98,7 +100,9 @@
               "https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/TweenLite.min.js",
               "https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/easeljs-0.7.1.min.js",
               "https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/requestAnimationFrame.js",
-              "src/assets/js/animateText.js"
+              "src/assets/js/animateText.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/js/scrollbox.js"
             ]
           }
         },

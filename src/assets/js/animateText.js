@@ -1,6 +1,6 @@
 var animateText = {
   colorType : {
-    type: "multi"
+    type: "rainbow"
   },
   
   colors : {
@@ -33,9 +33,9 @@ var animateText = {
     minSize: 4,
     parallax: 1.75,
     rotation: 0.5,
-    shape: "triangle",
+    shape: "image",
     speed: 3,
-    style: "fill",
+    style: "both",
     twinkle: false,
     xVariance: 5,
     yVariance: 0,

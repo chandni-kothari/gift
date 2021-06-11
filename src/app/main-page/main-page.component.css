@@ -1,21 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:900');
-/* 
-svg {
-  background: #ebe7e0;
-} */
 
 text {
   fill: #f55a5a;
   filter: url('#money');
   font-weight: 900;
   font-size: 33px;
+  font-family: -webkit-pictograph;
 }
 
 .box{
   background-color:#fffe8e;
   width:160px;
   height:130px;
-  top:90px;
+  top:70px;
   left:50px;
   position:absolute;
   border-radius:80px;

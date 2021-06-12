@@ -1,4 +1,3 @@
-//let screen2Loaded = false;
 let scrollObj = {
   onload: function () {
     let element = document.querySelector('.scroll-horizontal-container')
@@ -8,28 +7,6 @@ let scrollObj = {
         window.requestAnimationFrame(() => {
           element.scrollLeft += e.deltaY;
         })
-        // var value = element.scrollLeft;
-        // var sWidth = $(".screen:first").width()/2;
-        var maxWidth = $(".screen:first").width() * 2;
-        // console.log(element.scrollLeft);
-        // console.log(sWidth);
-        // if(value >= sWidth && value <= maxWidth) {
-        //   if(!screen2Loaded) {
-        //     animatePage1.showAnimation();
-        //     screen2Loaded = true;
-        //   } 
-        // } else {
-        //   screen2Loaded = false;
-        // }
-        // if (element.scrollLeft >= $('#section2').position().left && element.scrollLeft < maxWidth) {
-        //   console.log('I have been reached');
-        //   if (!screen2Loaded) {
-        //     animatePage1.showAnimation();
-        //     screen2Loaded = true;
-        //   }
-        // } else {
-        //   screen2Loaded = false;
-        // }
       }
     })
   }
@@ -92,7 +69,7 @@ let animatePage1 = {
 
     setTimeout(function () {
       Splitting();
-    }, 500);
+    }, 1500);
   },
   onload: function () {
     var elements = document.getElementsByClassName('typewrite');
@@ -108,7 +85,6 @@ let animatePage1 = {
     css.type = "text/css";
     css.innerHTML = ".typewrite > .wrap { font-family: 'Dekko'; color:#806787; border-right: 0.01em solid #000;}";
     document.body.appendChild(css);
-    animatePage1.hideDiv();
   }
 }
 

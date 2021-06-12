@@ -16,35 +16,13 @@ let audioObj = {
   onload: function () {
     let audio = document.getElementById("myaudio");
     audio.volume = 0.1;
-  },
-  fadeIn: function (audiosnippetId) {
-
-    var sound = document.getElementById(audiosnippetId);
-
-    // Set the point in playback that fadeout begins. This is for a 2 second fade out.
-    var fadePoint = sound.duration - 2;
-
-    var fadeAudio = setInterval(function () {
-
-      // Only fade if past the fade out point or not at zero already
-      if ((sound.currentTime >= fadePoint) && (sound.volume != 0.0)) {
-        sound.volume -= 0.1;
-      }
-      // When volume at zero stop all the intervalling
-      if (sound.volume === 0.0) {
-        clearInterval(fadeAudio);
-      }
-    }, 200);
   }
 }
 
 let animatePage1 = {
   oninit: function () {
-
-    /* inspired by http://bit.ly/2wzyTlx  */
     /* time out for whatever ainmations */
     setTimeout(function () {
-      // $(".top,.bottom").animate({ opacity: "1" }, 500);
       Splitting();
     }, 500);
 
@@ -63,10 +41,8 @@ let animatePage1 = {
     $(".bar").delay(0).animate({ marginTop: "-1px", opacity: "1" }, 500);
     $(".background").delay(1000).animate({ height: "100%", width: "100%", opacity: "1" }, 500);
     $(".typewrite, h1,h4").animate({ opacity: "1" }, 2000);
-    //$(".top,.bottom").delay(1400).animate({ opacity: "1" }, 500);
   },
   showAnimation: function () {
-
     setTimeout(function () {
       Splitting();
     }, 1500);
@@ -88,7 +64,7 @@ let animatePage1 = {
   }
 }
 
-/* typewriter effect for nevermind */
+/* typewriter effect */
 var TxtType = function (el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -102,20 +78,15 @@ var TxtType = function (el, toRotate, period) {
 TxtType.prototype.tick = function () {
   var i = this.loopNum % this.toRotate.length;
   var fullTxt = this.toRotate[i];
-
   if (this.isDeleting) {
     this.txt = fullTxt.substring(0, this.txt.length - 1);
   } else {
     this.txt = fullTxt.substring(0, this.txt.length + 1);
   }
-
   this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
   var that = this;
   var delta = 200 - Math.random() * 100;
-
   if (this.isDeleting) { delta /= 2; }
-
   if (!this.isDeleting && this.txt === fullTxt) {
     delta = this.period;
     this.isDeleting = true;

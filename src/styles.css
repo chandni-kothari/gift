@@ -77,12 +77,22 @@ main {
   margin-right: auto
 }
 
+@media not all and (min-resolution:.001dpcm) {
+  @supports (-webkit-appearance:none) {
+    .scroll-horizontal-container {
+      display: flex;
+      width: 100vw;
+      height: 90vh;
+      overflow-x: scroll;
+    }
+  }
+}
+
 .scroll-horizontal-container {
   display: flex;
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   overflow-x: scroll;
-  /* justify-content: center; */
 }
 
 .scroll-horizontal-container::-webkit-scrollbar {

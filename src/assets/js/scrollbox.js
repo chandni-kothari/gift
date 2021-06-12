@@ -49,18 +49,18 @@ let animatePage1 = {
     }, 500);
 
     /* fade in everything */
-    $(".background").delay(0).fadeIn(1000);
-    $(".typewrite").delay(500).fadeIn(1000);
-    $(".bar").delay(500).animate({ marginTop: "-2px", opacity: "1" }, 500);
+    $(".background").delay(0).fadeIn(500);
+    $(".typewrite").delay(0).fadeIn(500);
+    $(".bar").delay(0).animate({ marginTop: "-2px", opacity: "1" }, 500);
     $(".background").animate({ height: "100%", width: "100%", opacity: "1" }, 500);
-    $("h1,h4").delay(1000).animate({ marginTop: "5px", opacity: "1" }, 500);
+    $("h1,h4").delay(0).animate({ marginTop: "5px", opacity: "1" }, 500);
   },
   hideDiv: function () {
     $(".bar").delay(0).animate({ marginTop: "-50px", opacity: "0" }, 100);
     $(".background").animate({ height: "0px", width: "0px", opacity: "0" }, 500);
     $(".typewrite").animate({ opacity: "0" }, 500);
     $("h1,h4, .top,.bottom").animate({ opacity: "0" }, 500);
-    $(".bar").delay(2000).animate({ marginTop: "-1px", opacity: "1" }, 500);
+    $(".bar").delay(0).animate({ marginTop: "-1px", opacity: "1" }, 500);
     $(".background").delay(1000).animate({ height: "100%", width: "100%", opacity: "1" }, 500);
     $(".typewrite, h1,h4").animate({ opacity: "1" }, 2000);
     //$(".top,.bottom").delay(1400).animate({ opacity: "1" }, 500);

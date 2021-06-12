@@ -57,20 +57,6 @@ main {
   mix-blend-mode: color-dodge;
 }
 
-h1,
-p {
-  text-align: center;
-  margin: 0 auto;
-  max-width: 400px;
-}
-
-h1 {
-  font-size: 50px;
-  font-weight: 100;
-  font-family: "Mountains of Christmas", cursive;
-  margin: 0 auto 15px;
-}
-
 .dg.ac {
   z-index: 2 !important;
 }

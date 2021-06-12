@@ -1,4 +1,4 @@
-let screen2Loaded = false;
+//let screen2Loaded = false;
 let scrollObj = {
   onload: function () {
     let element = document.querySelector('.scroll-horizontal-container')
@@ -21,15 +21,15 @@ let scrollObj = {
         // } else {
         //   screen2Loaded = false;
         // }
-        if (element.scrollLeft >= $('#section2').position().left && element.scrollLeft < maxWidth) {
-          console.log('I have been reached');
-          if (!screen2Loaded) {
-            animatePage1.showAnimation();
-            screen2Loaded = true;
-          }
-        } else {
-          screen2Loaded = false;
-        }
+        // if (element.scrollLeft >= $('#section2').position().left && element.scrollLeft < maxWidth) {
+        //   console.log('I have been reached');
+        //   if (!screen2Loaded) {
+        //     animatePage1.showAnimation();
+        //     screen2Loaded = true;
+        //   }
+        // } else {
+        //   screen2Loaded = false;
+        // }
       }
     })
   }

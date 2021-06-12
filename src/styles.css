@@ -4,13 +4,19 @@
   font-family: 'Dekko';
   font-style: normal;
   font-weight: 400;
-  src: url('../src/assets/fonts/dekko-v9-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../src/assets/fonts/dekko-v9-latin-regular.eot');
+  /* IE9 Compat Modes */
   src: local(''),
-       url('../src/assets/fonts/dekko-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../src/assets/fonts/dekko-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../src/assets/fonts/dekko-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../src/assets/fonts/dekko-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../src/assets/fonts/dekko-v9-latin-regular.svg#Dekko') format('svg'); /* Legacy iOS */
+    url('../src/assets/fonts/dekko-v9-latin-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../src/assets/fonts/dekko-v9-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../src/assets/fonts/dekko-v9-latin-regular.woff') format('woff'),
+    /* Modern Browsers */
+    url('../src/assets/fonts/dekko-v9-latin-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../src/assets/fonts/dekko-v9-latin-regular.svg#Dekko') format('svg');
+  /* Legacy iOS */
 }
 
 body,
@@ -90,7 +96,7 @@ h1 {
   width: 100vw;
   height: 100vh;
   overflow-x: scroll;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .scroll-horizontal-container::-webkit-scrollbar {
@@ -114,4 +120,37 @@ h1 {
   border: 5px solid #111;
   border-radius: 15px;
   margin: 0px;
+}
+
+audio {
+  z-index: 10;
+  display: block;
+  position: absolute;
+  top: 93%;
+  left: 10px;
+  width: 200px;
+  height: 35px;
+  background-color: #fffe8e;
+}
+
+/* audio::-webkit-media-controls-mute-button {
+  display: none !important;
+} */
+
+/* audio::-webkit-media-controls-volume-slider {
+  display: none !important;
+} */
+
+
+/* Removes the timeline */
+/* audio::-webkit-media-controls-timeline {
+  display: none !important;
+} */
+
+/* Removes the time stamp */
+/* audio::-webkit-media-controls-current-time-display {
+  display: none;
+} */
+audio::-webkit-media-controls-time-remaining-display {
+  display: none;
 }

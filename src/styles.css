@@ -154,3 +154,17 @@ audio {
 audio::-webkit-media-controls-time-remaining-display {
   display: none;
 }
+
+@media only screen and (min-width: 746px) {
+  .scroll-horizontal-container {
+    height: 100vh;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}

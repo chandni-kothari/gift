@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-declare var animateText: any;
-declare var scrollObj: any;
 
 @Component({
   selector: 'app-main-page',
@@ -13,7 +11,6 @@ export class MainPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    animateText.onload();
-    scrollObj.onload();
+
   }
 }

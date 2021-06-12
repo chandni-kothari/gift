@@ -102,3 +102,113 @@ text {
   border-radius: 15px;
   margin: 0px;
 }
+
+@keyframes move-eye {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-75%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(75%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.head {
+  border: 5px solid black;
+  border-radius: 100rem;
+  height: 8rem;
+  position: relative;
+  width: 4rem;
+  margin: 0 auto;
+  top: 30%;
+}
+.head::before {
+  background-color: #FFE900;
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0.5rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+.head::after {
+  background-color: #f55a5a;
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: 35%;
+  transform: translateX(-50%);
+  width: 10rem;
+  z-index: 1;
+  border-radius: 25px;
+  content: "Loading Lots of Love ....";
+  font-family: "Dekko";
+  padding: 50%;
+}
+
+.hair {
+  height: 5px;
+  left: -5%;
+  position: absolute;
+  top: -5px;
+  width: 100%;
+}
+.hair::before, .hair::after {
+  content: "";
+  position: absolute;
+}
+.hair::before {
+  border-bottom: 5px solid #000;
+  border-left: 5px solid #000;
+  border-radius: 1rem;
+  bottom: 0;
+  height: 1rem;
+  left: 35%;
+  transform: rotate(25deg);
+  width: 1rem;
+}
+.hair::after {
+  border-right: 5px solid #000;
+  border-top: 5px solid #000;
+  border-radius: 1rem;
+  bottom: 0.65rem;
+  height: 1rem;
+  left: 27%;
+  transform: rotate(30deg);
+  width: 1rem;
+}
+
+.eye {
+  animation: move-eye 1.25s infinite linear;
+  background-color: #000;
+  border-radius: 5rem;
+  height: 0.75rem;
+  position: absolute;
+  top: 1.25rem;
+  width: 0.5rem;
+}
+.eye:first-of-type {
+  left: 25%;
+}
+.eye:last-of-type {
+  right: 25%;
+}
+
+.loading-div {
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #b6daea;
+}

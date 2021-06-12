@@ -42,7 +42,7 @@ var animateText = {
   },
   
   onload : function() {
-    animateText.initStats();
+    //animateText.initStats();
     animateText.initSparticles();
     //animateText.initGui();
   },

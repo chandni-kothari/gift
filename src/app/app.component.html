@@ -1,3 +1,13 @@
-<main id="app">
-    <app-main-page></app-main-page>
-</main>
+<div id="content" [ngClass]="isLoading ? 'hide': ''">
+    <main id="app">
+        <app-main-page></app-main-page>
+    </main>
+</div>
+
+<div class="loading-div" [ngClass]="{hide: !isLoading, show: isLoading}">
+    <div class="head">
+        <div class="hair"></div>
+        <span class="eye"></span>
+        <span class="eye"></span>
+      </div>
+</div> 

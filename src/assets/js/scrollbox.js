@@ -14,7 +14,8 @@ var scrollObj = {
 
 var audioObj = {
   onload: function () {
-    this.fadeIn("myaudio");
+    let audio = document.getElementById("myaudio");
+    audio.volume = 0.1;
   },
   fadeIn: function (audiosnippetId) {
 

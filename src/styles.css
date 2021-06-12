@@ -94,7 +94,7 @@ h1 {
 .scroll-horizontal-container {
   display: flex;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   overflow-x: scroll;
   /* justify-content: center; */
 }
@@ -130,7 +130,7 @@ audio {
   left: 10px;
   width: 200px;
   height: 35px;
-  background-color: #fffe8e;
+  /* background-color: #fffe8e; */
 }
 
 /* audio::-webkit-media-controls-mute-button {

@@ -23,6 +23,6 @@ export class AppComponent {
         animateText.onload();
       }, 200);
 
-   }, 8000);
+   }, 5000);
   }
 }

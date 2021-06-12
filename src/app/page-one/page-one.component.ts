@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var animatePage1: any;
 
 @Component({
   selector: 'app-page-one',
@@ -10,6 +11,7 @@ export class PageOneComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    animatePage1.oninit();
+    animatePage1.onload();
   }
-
 }

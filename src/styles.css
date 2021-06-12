@@ -121,7 +121,7 @@ audio::-webkit-media-controls-time-remaining-display {
   display: none;
 }
 
-@media only screen and (min-width: 746px) {
+@media only screen and (min-width: 768px) {
   .scroll-horizontal-container {
     height: 100vh;
   }

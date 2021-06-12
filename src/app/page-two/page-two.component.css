@@ -48,14 +48,14 @@
     transform-origin: top center;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    background: repeating-linear-gradient(-45deg,#eee,#eee 10px, #e74c3c 10px, #e74c3c 20px,#eee 20px,#eee 30px, #1e90ff 30px, #1e90ff 40px) 0 0/100% 5px no-repeat,#eee;
+    background: repeating-linear-gradient(-45deg, #eee, #eee 10px, #e74c3c 10px, #e74c3c 20px, #eee 20px, #eee 30px, #1e90ff 30px, #1e90ff 40px) 0 0/100% 5px no-repeat, #eee;
     z-index: 4;
     -webkit-clip-path: polygon(5% 40%, 50% 100%, 95% 40%, 100% 0, 0 0);
     clip-path: polygon(5% 40%, 50% 100%, 95% 40%, 100% 0, 0 0);
   }
 
   .envelope__flap--inside {
-    background:#eee;
+    background: #eee;
     -webkit-backface-visibility: visible;
     backface-visibility: visible;
   }
@@ -132,4 +132,25 @@
     font-size: 20px;
     font-family: 'Dekko';
     transform: skewX(-20deg);
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  @media only screen and (min-width: 746px) {
+    .main-page {
+      width: 45%;
+      height: 100%;
+    }
+
+    .envelope {
+      width: 90%;
+      height: 50%;
+      top: 40%;
+    }
+
+    p {
+      font-size: 15px;
+    }
   }

@@ -77,14 +77,12 @@ main {
   margin-right: auto
 }
 
-@media not all and (min-resolution:.001dpcm) {
-  @supports (-webkit-appearance:none) {
-    .scroll-horizontal-container {
-      display: flex;
-      width: 100vw;
-      height: 90vh;
-      overflow-x: scroll;
-    }
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .scroll-horizontal-container {
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    overflow-x: scroll;
   }
 }
 

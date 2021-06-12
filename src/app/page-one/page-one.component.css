@@ -125,7 +125,7 @@
   height: 100%;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -30px;
   z-index: 1;
   opacity: 0.9;
 }
@@ -160,14 +160,14 @@
 }
 
 /* what ever text ainmation  */
-.splitting .char {
+/* .splitting .char {
   animation: slide-in 1s cubic-bezier(.5, 0, .5, 1) both;
   animation-delay: calc(100ms * var(--char-index));
-}
+} */
 
 
 /* ainmations for "ever" background */
-
+/* 
 @keyframes slide-in {
   from {
     transform: translateY(-1em) rotate(-.5turn) scale(0.5);
@@ -185,7 +185,7 @@
   100% {
     left: 1px;
   }
-}
+} */
 
 
 

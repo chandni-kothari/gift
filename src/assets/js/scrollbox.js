@@ -75,7 +75,7 @@ let animatePage1 = {
     $(".background").delay(0).fadeIn(1000);
     $(".typewrite").delay(500).fadeIn(1000);
     $(".bar").delay(500).animate({ marginTop: "-2px", opacity: "1" }, 500);
-    $(".background").animate({ height: "410px", width: "450px", opacity: "1" }, 500);
+    $(".background").animate({ height: "100%", width: "100%", opacity: "1" }, 500);
     $("h1,h4").delay(1000).animate({ marginTop: "5px", opacity: "1" }, 500);
   },
   hideDiv: function () {
@@ -84,7 +84,7 @@ let animatePage1 = {
     $(".typewrite").animate({ opacity: "0" }, 500);
     $("h1,h4, .top,.bottom").animate({ opacity: "0" }, 500);
     $(".bar").delay(2000).animate({ marginTop: "-1px", opacity: "1" }, 500);
-    $(".background").delay(1000).animate({ height: "410px", width: "450px", opacity: "1" }, 500);
+    $(".background").delay(1000).animate({ height: "100%", width: "100%", opacity: "1" }, 500);
     $(".typewrite, h1,h4").animate({ opacity: "1" }, 2000);
     $(".top,.bottom").delay(1400).animate({ opacity: "1" }, 500);
   },

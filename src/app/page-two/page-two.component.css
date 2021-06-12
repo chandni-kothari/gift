@@ -132,8 +132,16 @@
     font-size: 20px;
     font-family: 'Dekko';
     transform: skewX(-20deg);
+    font-size: 12px;
   }
 
   p {
     font-size: 12px;
   }
+
+  
+@media only screen and (min-width: 746px) {
+  p,.sign-off {
+    font-size: 15px;
+  }
+}

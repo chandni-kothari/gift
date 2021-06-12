@@ -3,6 +3,7 @@ import * as jQuery from 'jquery';
 declare var animateText: any;
 declare var scrollObj: any;
 declare var audioObj : any;
+declare var animatePage1: any;
 
 @Component({
   selector: 'app-root',
@@ -21,6 +22,8 @@ export class AppComponent {
 
       setTimeout (() => {
         animateText.onload();
+        animatePage1.oninit();
+        animatePage1.onload();
       }, 200);
 
    }, 5000);

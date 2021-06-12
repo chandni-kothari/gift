@@ -44,7 +44,7 @@ let animatePage1 = {
     /* inspired by http://bit.ly/2wzyTlx  */
     /* time out for whatever ainmations */
     setTimeout(function () {
-      $(".top,.bottom").animate({ opacity: "1" }, 500);
+      // $(".top,.bottom").animate({ opacity: "1" }, 500);
       Splitting();
     }, 500);
 
@@ -63,7 +63,7 @@ let animatePage1 = {
     $(".bar").delay(2000).animate({ marginTop: "-1px", opacity: "1" }, 500);
     $(".background").delay(1000).animate({ height: "100%", width: "100%", opacity: "1" }, 500);
     $(".typewrite, h1,h4").animate({ opacity: "1" }, 2000);
-    $(".top,.bottom").delay(1400).animate({ opacity: "1" }, 500);
+    //$(".top,.bottom").delay(1400).animate({ opacity: "1" }, 500);
   },
   showAnimation: function () {
 
